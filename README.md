@@ -31,12 +31,11 @@ If you wish to submit via an emailed zip file:
 You will be exploring the data to develop a classification of narratives and writing up a summary of the data and your results. **The whole exercise should take no longer than 4 hours (self-timed)**.
 
 Your **code** needs to perform the following tasks:
-1. Read and standardize the json files in a way that facilitates further analysis (i.e. "flatten" them)
+1. Read and standardize the json files in a way that facilitates further analysis (i.e. "flatten" them and link with `AviationData`)
 2. Prepare descriptive statistics that convey an overview of the structured data.
-3. Create a chart that you feel conveys one important relationship in the data
-4. Perform initial exploratory analysis of the narrative text, analyzing the use of words over time.
-5. Use topic modeling or any other text clustering methodology to cluster/group the incidents based on the narrative text and/or probable cause descriptions. Come up with a short name for each topic or cluster you identify to make it easy to report on.
-6. Create a chart that you feel conveys one important relationship in the data.
+3. Perform initial exploratory analysis of the narrative text, analyzing the use of words over time.
+4. Use topic modeling or any other text clustering methodology to cluster/group the incidents based on the narrative text and/or probable cause descriptions. Come up with a short name for each topic or cluster you identify to make it easy to report on.
+5. Create a chart that you feel conveys one important relationship in the data.
 
 Your **writeup** should do the following:
 1. Describe your methodology and results in 500 words or less.
@@ -52,9 +51,10 @@ _Additional Context:_
 
 ### The Data
 
-There are 145 files in this repository:
+There are 146 files in this repository (`data/`):
 
 - `AviationData.xml`: This is a straight export of the database provided by the NTSB. The data has not been altered. It was retrieved by clicking "Download All (XML)" from [this page on the NTSB site.](http://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx)
+- `AviationData.csv`: This is a CSV version of the XML above, pre-converted to a tabular format so that it's easier to work with for this analysis. The script used for conversion is `parse_xml.py`
 
 There are 144 files in the following format:
 
